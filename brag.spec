@@ -5,8 +5,6 @@ Version:	1.1.0
 Release:	2
 License:	GPL
 Group:		Applications/News
-Group(de):	Applikationen/News
-Group(pl):	Aplikacje/News
 Source0:	http://prdownloads.sourceforge.net/brag/%{name}-%{version}.tar.gz
 Patch0:		%{name}-install.patch
 Patch1:		%{name}-tclsh.patch
