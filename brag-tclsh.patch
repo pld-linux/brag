@@ -1,0 +1,21 @@
+--- brag-1.1.0/brag~	Sun Oct 15 20:13:24 2000
++++ brag-1.1.0/brag	Wed Oct 17 08:41:34 2001
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/usr/bin/tclsh
+ # -*- Mode: Tcl -*-
+ #
+ # Name		brag
+@@ -9,12 +9,6 @@
+ # Version	$Id$
+ #
+ # \
+-which tclsh8.4 >/dev/null 2>&1 && exec tclsh8.4 "$0" ${1+"$@"}; \
+-which tclsh8.3 >/dev/null 2>&1 && exec tclsh8.3 "$0" ${1+"$@"}; \
+-which tclsh8.2 >/dev/null 2>&1 && exec tclsh8.2 "$0" ${1+"$@"}; \
+-which tclsh8.1 >/dev/null 2>&1 && exec tclsh8.1 "$0" ${1+"$@"}; \
+-which tclsh8.0 >/dev/null 2>&1 && exec tclsh8.0 "$0" ${1+"$@"}; \
+-exec tclsh "$0" ${1+"$@"}
+ 
+ # Check Tcl version
+ if {[info tclversion] < 8.0} {
