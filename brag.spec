@@ -2,13 +2,14 @@ Summary:	Download and assemble multipart binaries from newsgroups
 Summary(pl):	¦ci±ganie i ³±czenie wieloczê¶ciowych binariów z news-grup
 Name:		brag
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/News
 Group(de):	Applikationen/News
 Group(pl):	Aplikacje/News
-Source0:	http://brag.sourceforge.net/%{name}-%{version}.tar.gz
+Source0:	http://prdownloads.sourceforge.net/brag/%{name}-%{version}.tar.gz
 Patch0:		%{name}-install.patch
+Patch1:		%{name}-tclsh.patch
 Requires:	tcl >= 8.0
 Requires:	sharutils
 BuildArch:	noarch
@@ -20,17 +21,15 @@ attachements from newsgroups. Ideal for regular news scanning using
 cron. Supported message encodings: uuencode and MIME base64.
 
 %description -l pl
-Brag jest narzêdziem uruchamianym z linii komend s³u¿±cym do ¶ci±gania i
-³±czenia wieloczê¶ciowych za³±czników binarnych z grup dyskusyjnych.
-Jest idealny do regularnego skanowania grup przy wykorzystaniu
-crona. Obs³uguje nastêpuj±ce kodowania wiadomo¶ci: uuencode oraz
-MIME base64.
+Brag jest narzêdziem uruchamianym z linii komend s³u¿±cym do ¶ci±gania
+i ³±czenia wieloczê¶ciowych za³±czników binarnych z grup dyskusyjnych.
+Jest idealny do regularnego skanowania grup przy wykorzystaniu crona.
+Obs³uguje nastêpuj±ce kodowania wiadomo¶ci: uuencode oraz MIME base64.
 
 %prep
 %setup -q
 %patch0 -p1
-
-%build
+%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
