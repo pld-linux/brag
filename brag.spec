@@ -1,13 +1,12 @@
 Summary:	Download and assemble multipart binaries from newsgroups
 Summary(pl):	¦ci±ganie i ³±czenie wieloczê¶ciowych binariów z news-grup
 Name:		brag
-Version:	1.1.0
-Release:	2
+Version:	1.2.9
+Release:	1
 License:	GPL
 Group:		Applications/News
 Source0:	http://prdownloads.sourceforge.net/brag/%{name}-%{version}.tar.gz
 Patch0:		%{name}-install.patch
-Patch1:		%{name}-tclsh.patch
 Requires:	tcl >= 8.0
 Requires:	sharutils
 BuildArch:	noarch
@@ -27,7 +26,6 @@ Obs³uguje nastêpuj±ce kodowania wiadomo¶ci: uuencode oraz MIME base64.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -35,13 +33,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 %{__make} install ROOT="$RPM_BUILD_ROOT"
 
-gzip -9nf CHANGES README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc CHANGES README
 %attr(755,root,root) %{_bindir}/brag
 %{_mandir}/man1/brag.1*
