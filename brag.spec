@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/News
 Source0:	http://prdownloads.sourceforge.net/brag/%{name}-%{version}.tar.gz
 Patch0:		%{name}-install.patch
+URL:		http://brag.sourceforge.net/
 Requires:	tcl >= 8.0
 Requires:	sharutils
 BuildArch:	noarch
