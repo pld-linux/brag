@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Brag is command line tool to collect and assemble multipart binary
-attachements from newsgroups. Ideal for regular news scanning using
+attachments from newsgroups. Ideal for regular news scanning using
 cron. Supported message encodings: uuencode and MIME base64.
 
 %description -l pl
