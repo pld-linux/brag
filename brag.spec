@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/News
 Source0:	http://dl.sourceforge.net/brag/%{name}-%{version}.tar.gz
+# Source0-md5:	69bcd3c3183cac326acfee5c329b006a
 Patch0:		%{name}-install.patch
 URL:		http://brag.sourceforge.net/
 Requires:	sharutils
