@@ -1,12 +1,12 @@
 Summary:	Download and assemble multipart binaries from newsgroups
 Summary(pl):	¦ci±ganie i ³±czenie wieloczê¶ciowych binariów z grup dyskusyjnych
 Name:		brag
-Version:	1.4.0
+Version:	1.4.1
 Release:	1
 License:	GPL
 Group:		Applications/News
 Source0:	http://dl.sourceforge.net/brag/%{name}-%{version}.tar.gz
-# Source0-md5:	796210b22fe6f21ecce331db867c9a56
+# Source0-md5:	d85755dbb6d493c00e4a4844b0565a0b
 Patch0:		%{name}-install.patch
 URL:		http://brag.sourceforge.net/
 Requires:	sharutils
