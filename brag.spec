@@ -1,5 +1,5 @@
 Summary:	Download and assemble multipart binaries from newsgroups
-Summary(pl):	¦ci±ganie i ³±czenie wieloczê¶ciowych binariów z grup dyskusyjnych
+Summary(pl.UTF-8):   ÅšciÄ…ganie i Å‚Ä…czenie wieloczÄ™Å›ciowych binariÃ³w z grup dyskusyjnych
 Name:		brag
 Version:	1.4.3
 Release:	2
@@ -19,11 +19,11 @@ Brag is command line tool to collect and assemble multipart binary
 attachments from newsgroups. Ideal for regular news scanning using
 cron. Supported message encodings: uuencode and MIME base64.
 
-%description -l pl
-Brag jest narzêdziem uruchamianym z linii komend s³u¿±cym do ¶ci±gania
-i ³±czenia wieloczê¶ciowych za³±czników binarnych z grup dyskusyjnych.
+%description -l pl.UTF-8
+Brag jest narzÄ™dziem uruchamianym z linii komend sÅ‚uÅ¼Ä…cym do Å›ciÄ…gania
+i Å‚Ä…czenia wieloczÄ™Å›ciowych zaÅ‚Ä…cznikÃ³w binarnych z grup dyskusyjnych.
 Jest idealny do regularnego skanowania grup przy wykorzystaniu crona.
-Obs³uguje nastêpuj±ce kodowania wiadomo¶ci: uuencode oraz MIME base64.
+ObsÅ‚uguje nastÄ™pujÄ…ce kodowania wiadomoÅ›ci: uuencode oraz MIME base64.
 
 %prep
 %setup -q
