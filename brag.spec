@@ -1,5 +1,5 @@
 Summary:	Download and assemble multipart binaries from newsgroups
-Summary(pl.UTF-8):   Ściąganie i łączenie wieloczęściowych binariów z grup dyskusyjnych
+Summary(pl.UTF-8):	Ściąganie i łączenie wieloczęściowych binariów z grup dyskusyjnych
 Name:		brag
 Version:	1.4.3
 Release:	2
